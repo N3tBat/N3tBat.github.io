@@ -2,24 +2,24 @@
    1. VARIABLES Y CONFIGURACIÓN GLOBAL
    ========================================================================== */
 :root {
-    /* Colores del sitio: Usamos variables para cambiar el tema fácilmente */
-    --color-fondo: #FDFBF7;      /* Crema cálido */
-    --color-texto: #2d3436;      /* Gris oscuro (mejor que negro puro) */
+    /* Colores del sitio */
+    --color-fondo: #FDFBF7;
+    --color-texto: #2d3436;
     --color-blanco: #ffffff;
-    --color-acento: #e17055;     /* Terracota suave (color principal) */
-    --color-dorado: #fdcb6e;     /* Para estrellas y detalles */
-    --color-rojo-promo: #d63031; /* Para ofertas */
+    --color-acento: #e17055;
+    --color-dorado: #fdcb6e;
+    --color-rojo-promo: #d63031;
     
     /* Tipografía y bordes */
     --fuente-principal: 'Poppins', sans-serif;
-    --radio-borde: 16px;         /* Curvatura estándar de las tarjetas */
+    --radio-borde: 16px;
 }
 
-/* Reset básico: Elimina márgenes por defecto del navegador */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* El padding no aumenta el tamaño total del elemento */
+    box-sizing: border-box;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
     line-height: 1.6;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Asegura que el footer siempre se vaya al fondo si hay poco contenido */
+    min-height: 100vh;
 }
 
 /* Estilos generales de listas y enlaces */
@@ -37,11 +37,11 @@ ul { list-style: none; }
 a { 
     text-decoration: none; 
     color: inherit;
-    transition: all 0.3s ease; /* Suaviza todas las animaciones de hover */
+    transition: all 0.3s ease;
 }
 
 .container {
-    max-width: 1200px; /* Ancho máximo del contenido centrado */
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     width: 100%;
@@ -51,17 +51,17 @@ a {
    2. HEADER & BARRA DE NAVEGACIÓN (NAVBAR)
    ========================================================================== */
 header {
-    background-color: rgba(255, 255, 255, 0.95); /* Casi blanco pero deja ver un poco el fondo */
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);     /* Sombra sutil */
-    position: sticky; /* Se queda pegado arriba al hacer scroll */
+    background-color: rgba(255, 255, 255, 0.98); 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    position: sticky;
     top: 0;
-    z-index: 1000;    /* Siempre encima de todo */
-    backdrop-filter: blur(5px); /* Efecto vidrio borroso */
+    z-index: 1000;
+    backdrop-filter: blur(5px);
 }
 
 .navbar {
     display: flex;
-    justify-content: space-between; /* Logo a la izq, Menú a la der */
+    justify-content: space-between;
     align-items: center;
     padding: 1rem 20px;
 }
@@ -76,7 +76,7 @@ header {
 
 .nav-links {
     display: flex;
-    gap: 30px; /* Espacio entre opciones del menú */
+    gap: 30px;
 }
 
 .nav-links a {
@@ -84,14 +84,14 @@ header {
     font-weight: 600;
     color: #555;
     text-transform: uppercase;
-    position: relative; /* Necesario para el subrayado animado */
+    position: relative;
 }
 
-/* Animación del subrayado en el menú */
+/* Animación del subrayado */
 .nav-links a::after {
     content: '';
     position: absolute;
-    width: 0; /* Empieza invisible (ancho 0) */
+    width: 0;
     height: 2px;
     bottom: -5px;
     left: 0;
@@ -101,7 +101,7 @@ header {
 
 .nav-links a:hover::after, 
 .nav-links a.active::after {
-    width: 100%; /* Al pasar el mouse, crece al 100% */
+    width: 100%;
 }
 
 /* ==========================================================================
@@ -117,13 +117,14 @@ header {
     justify-content: center;
     text-align: center;
     color: white;
-    margin-bottom: -50px; /* Efecto: Las tarjetas de abajo "muerden" un poco la foto */
+    margin-bottom: -50px; 
+    padding: 0 20px; 
 }
 
 .intro-text h1 {
     font-size: 3.5rem;
     font-weight: 700;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Sombra para leer mejor sobre imagen */
+    text-shadow: 0 4px 10px rgba(0,0,0,0.3);
     margin-bottom: 10px;
 }
 
@@ -132,10 +133,9 @@ header {
    ========================================================================== */
 .main-menu-grid {
     display: grid;
-    /* Crea columnas automáticas. Mínimo 320px de ancho, si cabe más, se estira */
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
-    padding: 10px;
+    padding: 20px; 
     max-width: 1400px;
     margin: 0 auto;
     margin-bottom: 80px;
@@ -147,7 +147,7 @@ header {
     border-radius: 20px;
     overflow: hidden;
     display: flex;
-    align-items: flex-end; /* Texto abajo */
+    align-items: flex-end;
     justify-content: center;
     text-align: center;
     color: white;
@@ -158,7 +158,6 @@ header {
     transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), background-size 0.6s;
 }
 
-/* Capa oscura sobre las tarjetas (Overlay) para que el texto se lea */
 .menu-card-link::before {
     content: '';
     position: absolute;
@@ -167,17 +166,15 @@ header {
     z-index: 1;
 }
 
-/* Animaciones Hover */
 .menu-card-link:hover {
-    transform: translateY(-12px); /* Flota hacia arriba */
+    transform: translateY(-12px);
     z-index: 10;
-    background-size: 110%; /* Efecto Zoom en el fondo */
+    background-size: 110%;
 }
 
-/* Texto dentro de la tarjeta */
 .card-content {
     position: relative;
-    z-index: 2; /* Encima del overlay */
+    z-index: 2;
     padding: 20px;
     width: 100%;
 }
@@ -195,19 +192,17 @@ header {
     color: #dfe6e9;
 }
 
-/* Imágenes de fondo para categorías del Home (ESTÁTICAS) */
+/* Imágenes de fondo (Estáticas) */
 .bg-desayuno { background-image: url('https://images.pexels.com/photos/34793979/pexels-photo-34793979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); }
 .bg-comida { background-image: url('https://images.unsplash.com/photo-1565299585323-38d6b0865b47?q=80&w=1000'); }
 .bg-cena { background-image: url('https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1000'); }
 .bg-bebida { background-image: url('https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1000'); }
 .bg-postres { background-image: url('https://images.pexels.com/photos/6605961/pexels-photo-6605961.jpeg?q=80&w=1000'); }
-.bg-comentarios { background: #2d3436; } /* Color sólido para comentarios */
+.bg-comentarios { background: #2d3436; }
 
 /* ==========================================================================
-   5. ESTILOS COMUNES PÁGINAS INTERNAS (Menús, Galería, etc)
+   5. ESTILOS COMUNES PÁGINAS INTERNAS
    ========================================================================== */
-
-/* Hero interno (más pequeño que el del Home) */
 .hero-internal {
     height: 40vh;
     min-height: 300px;
@@ -227,7 +222,6 @@ header {
     text-shadow: 0 4px 15px rgba(0,0,0,0.6);
 }
 
-/* Grid para los platillos */
 .dishes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -235,7 +229,6 @@ header {
     padding-bottom: 60px;
 }
 
-/* Tarjeta de platillo individual */
 .dish-card {
     background: white;
     border-radius: 16px;
@@ -244,7 +237,7 @@ header {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    height: 100%; /* Altura uniforme */
+    height: 100%;
 }
 
 .dish-card:hover {
@@ -252,7 +245,6 @@ header {
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
 
-/* Contenedor de imagen del platillo */
 .dish-image {
     height: 220px;
     width: 100%;
@@ -262,14 +254,14 @@ header {
 }
 
 .dish-card:hover .dish-image {
-    transform: scale(1.05); /* Zoom suave a la foto */
+    transform: scale(1.05);
 }
 
 .dish-info {
     padding: 25px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Empuja el contenido para llenar el espacio */
+    flex-grow: 1;
 }
 
 .dish-header {
@@ -301,10 +293,8 @@ header {
 }
 
 /* ==========================================================================
-   6. ESTILOS ESPECÍFICOS (Galería, Testimonios, Promos)
+   6. OTROS (Galería, Testimonios, Promos, Footer)
    ========================================================================== */
-
-/* --- GALERÍA --- */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -348,7 +338,6 @@ header {
     padding: 10px 20px;
 }
 
-/* --- TESTIMONIOS --- */
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -378,7 +367,6 @@ header {
     object-fit: cover;
 }
 
-/* Formulario de reseñas */
 .review-form-section {
     background-color: #fff;
     padding: 60px 0;
@@ -415,7 +403,6 @@ header {
 }
 .btn-submit:hover { background-color: var(--color-acento); }
 
-/* --- PROMOCIONES --- */
 .promo-card {
     position: relative;
     border: 2px solid transparent;
@@ -443,27 +430,60 @@ header {
 .old-price { font-size: 0.9rem; text-decoration: line-through; color: #b2bec3; }
 .promo-price { font-size: 1.2rem; font-weight: 700; color: var(--color-rojo-promo); }
 
-/* ==========================================================================
-   7. FOOTER (PIE DE PÁGINA)
-   ========================================================================== */
 footer {
     background-color: var(--color-texto);
     color: #fff;
     text-align: center;
     padding: 30px 0;
-    margin-top: auto; /* Empuja el footer al final */
+    margin-top: auto;
 }
 
 /* ==========================================================================
    8. RESPONSIVE (CELULARES)
    ========================================================================== */
 @media (max-width: 768px) {
-    .hero-section, .hero-internal { height: 40vh; }
+    
+    /* Navbar: Más espacio entre links para que no se vea amontonado */
+    .navbar { 
+        flex-direction: column; 
+        gap: 20px; 
+    }
+    
+    .nav-links { 
+        gap: 20px; 
+        flex-wrap: wrap; 
+        justify-content: center;
+        width: 100%;
+    }
+
+    /* Hero: Quitar el margen negativo en celular para que no se encime */
+    .hero-section {
+        height: 50vh; 
+        margin-bottom: 20px; 
+    }
+
+    .hero-internal { height: 40vh; }
+    
     .intro-text h1 { font-size: 2rem; }
-    
-    /* Menú hamburguesa simplificado (columna) */
-    .navbar { flex-direction: column; gap: 15px; }
-    .nav-links { gap: 15px; flex-wrap: wrap; justify-content: center; }
-    
+
+    /* MENU GRID: Obligamos a que sea de 1 sola columna */
+    .main-menu-grid {
+        grid-template-columns: 1fr; 
+        gap: 30px; 
+        padding: 15px;
+    }
+
+    /* Tarjetas del menú: Ajuste de altura para móviles */
+    .menu-card-link {
+        height: auto; 
+        aspect-ratio: 4/5; 
+        min-height: 300px;
+    }
+
+    .card-title {
+        font-size: 1.8rem; 
+    }
+
+    /* Formularios */
     .input-group { flex-direction: column; }
 }
