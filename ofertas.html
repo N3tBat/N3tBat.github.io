@@ -2,16 +2,23 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Permite que la página sea adaptable a dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ofertas - Restaurante Nerak</title>
+
+    <!-- Fuente externa importada desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     
+    <!-- Encabezado principal con barra de navegación -->
     <header>
         <div class="container navbar">
             <a href="index.html" class="logo">Restaurante Nerak</a>
+
+            <!-- Menú de navegación -->
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Inicio</a></li>
@@ -23,35 +30,52 @@
         </div>
     </header>
 
-    <section class="hero-internal" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1509458844418-596a0af865da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b2ZlcnRhcyUyMGNvbWlkYXxlbnwwfHwwfHx8MA%3D%3D');">
+    <!-- Sección superior con imagen de fondo y texto descriptivo -->
+    <section class="hero-internal" style="background-image: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('https://images.unsplash.com/photo-1509458844418-596a0af865da?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b2ZlcnRhcyUyMGNvbWlkYXxlbnwwfHwwfHx8MA%3D%3D');">
         <div class="hero-content">
             <h1>Ofertas Especiales</h1>
             <p>Los mejores sabores a precios increíbles. ¡Aprovéchalos!</p>
         </div>
     </section>
 
+    <!-- Sección donde se muestran las ofertas -->
     <section class="seccion-menu">
         <div class="container">
             <div class="dishes-grid">
-                
+
+                <!-- Tarjeta 1: Promocion 1 -->
                 <div class="dish-card promo-card">
+                    <!-- Etiqueta de descuento -->
                     <div class="promo-badge">-15%</div>
+
+                    <!-- Imagen del platillo -->
                     <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1599789197514-47270cd526b4?q=80&w=600');"></div>
+
+                    <!-- Información del platillo -->
                     <div class="dish-info">
                         <div class="dish-header">
                             <h3>Desayuno Completo</h3>
+
+                            <!-- Precio viejo y nuevo -->
                             <div class="price-container">
                                 <span class="old-price">$135</span>
                                 <span class="promo-price">$115</span>
                             </div>
                         </div>
+
+                        <!-- Descripción del platillo -->
                         <p class="dish-desc">Orden de Chilaquiles Verdes + Jugo de Naranja o Café Americano. La mejor forma de despertar.</p>
                     </div>
                 </div>
+                <!-- Y asi en cada tarjeta -->
 
+                <!-- Tarjeta 2: Promocion 2 -->
                 <div class="dish-card promo-card">
                     <div class="promo-badge">FAVORITO</div>
                     <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=600');"></div>
+
                     <div class="dish-info">
                         <div class="dish-header">
                             <h3>Burger & Beer</h3>
@@ -64,9 +88,11 @@
                     </div>
                 </div>
 
+                <!-- Tarjeta 3: Promocion 3 -->
                 <div class="dish-card promo-card">
                     <div class="promo-badge">LUN-VIE</div>
-                    <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1629115916087-7e8c114a24ed?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bGFzYSVDMyVCMWF8ZW58MHx8MHx8fDA%3Dq=80&w=600');"></div>
+                    <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1629115916087-7e8c114a24ed?q=80&w=600');"></div>
+
                     <div class="dish-info">
                         <div class="dish-header">
                             <h3>Menú Ejecutivo</h3>
@@ -79,9 +105,11 @@
                     </div>
                 </div>
 
+                <!-- Tarjeta 4: Promocion 4 -->
                 <div class="dish-card promo-card">
                     <div class="promo-badge">2x1 BEBIDAS</div>
                     <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1565299585323-38d6b0865b47?q=80&w=600');"></div>
+
                     <div class="dish-info">
                         <div class="dish-header">
                             <h3>Tarde de Tacos</h3>
@@ -98,6 +126,7 @@
         </div>
     </section>
 
+    <!-- Pie de Pagina -->
     <footer>
         <div class="container">
             <p>&copy; 2025 Restaurante Nerak</p>

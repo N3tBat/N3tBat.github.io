@@ -1,17 +1,26 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> 
+<html lang="es"> 
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
+
+    <!-- Permite que la página sea adaptable a dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comidas - Restaurante Nerak</title>
+
+    <!-- Fuente externa importada desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
     
+    <!-- Encabezado principal con barra de navegación -->
     <header>
         <div class="container navbar">
             <a href="index.html" class="logo">Restaurante Nerak</a>
+            
+            <!-- Menú de navegación -->
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Inicio</a></li>
@@ -23,33 +32,55 @@
                     <li><a href="ofertas.html">Ofertas</a></li>
                 </ul>
             </nav>
+
         </div>
     </header>
 
-    <section class="hero-internal" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1920');">
-        <div class="hero-content">
+    <!-- Sección superior con imagen de fondo y texto descriptivo -->
+    <section class="hero-internal" 
+        style="background-image: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1920');">
+        
+        <div class="hero-content"> 
             <h1>Nuestras Comidas</h1>
             <p>Platillos fuertes preparados con el sazón que nos caracteriza.</p>
         </div>
     </section>
 
+    <!-- Sección donde se muestran las comidas -->
     <section class="seccion-menu">
-        <div class="container">
+        <div class="container"> 
             <div class="dishes-grid">
-                
+
+                <!-- Tarjeta 1: Pasta Carbonara -->
                 <div class="dish-card">
-                    <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1588013273468-315fd88ea34c?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+
+                    <!-- Imagen del platillo -->
+                    <div class="dish-image" 
+                        style="background-image: url('https://images.unsplash.com/photo-1588013273468-315fd88ea34c?q=80&w=1169');">
+                    </div> 
+                    
+                    <!-- Información del platillo -->
                     <div class="dish-info">
+
+                        <!-- Encabezado con nombre y precio -->
                         <div class="dish-header">
                             <h3>Pasta Carbonara</h3>
-                            <span class="price">$120.00</span>
+                            <span class="price">$120.00</span> 
                         </div>
+                        
+                        <!-- Descripción del platillo -->
                         <p class="dish-desc">Salsa cremosa de huevo y queso parmesano con tocino crujiente.</p>
                     </div>
                 </div>
+                <!-- Y asi en cada tarjeta -->
 
+                <!-- Tarjeta 2: Ensalada -->
                 <div class="dish-card">
-                    <div class="dish-image" style="background-image: url('https://images.pexels.com/photos/34831919/pexels-photo-34831919.jpeg?_gl=1*1yn088f*_ga*NDExNDQyNzg1LjE3NjM3NTMxMDg.*_ga_8JE65Q40S6*czE3NjM3NTMxMDgkbzEkZzEkdDE3NjM3NTM1NjUkajU2JGwwJGgwq=80&w=600');"></div>
+                    <div class="dish-image" 
+                        style="background-image: url('https://images.pexels.com/photos/34831919/pexels-photo-34831919.jpeg');"></div>
+                    
                     <div class="dish-info">
                         <div class="dish-header">
                             <h3>Ensalada César con Pollo</h3>
@@ -59,8 +90,11 @@
                     </div>
                 </div>
 
+                <!-- Tarjeta 3: Lasaña -->
                 <div class="dish-card">
-                    <div class="dish-image" style="background-image: url('https://plus.unsplash.com/premium_photo-1664472658489-8bb2cf572db1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGFzYSVDMyVCMWElMjBkZSUyMGNhcm5lfGVufDB8fDB8fHww');"></div>
+                    <div class="dish-image" 
+                        style="background-image: url('https://plus.unsplash.com/premium_photo-1664472658489-8bb2cf572db1');"></div>
+                    
                     <div class="dish-info">
                         <div class="dish-header">
                             <h3>Lasaña de Carne</h3>
@@ -70,8 +104,11 @@
                     </div>
                 </div>
 
+                <!-- Tarjeta 4: Hamburguesa -->
                 <div class="dish-card">
-                    <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=600');"></div>
+                    <div class="dish-image" 
+                        style="background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd');"></div>
+                    
                     <div class="dish-info">
                         <div class="dish-header">
                             <h3>Hamburguesa Clásica</h3>
@@ -81,8 +118,11 @@
                     </div>
                 </div>
 
+                <!-- Tarjeta 5: Pechuga -->
                 <div class="dish-card">
-                    <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=600');"></div>
+                    <div class="dish-image" 
+                        style="background-image: url('https://images.unsplash.com/photo-1604908176997-125f25cc6f3d');"></div>
+                    
                     <div class="dish-info">
                         <div class="dish-header">
                             <h3>Pechuga con Arroz</h3>
@@ -92,47 +132,59 @@
                     </div>
                 </div>
 
+                <!-- Tarjeta 6: Aguachile -->
                 <div class="dish-card">
-                    <div class="dish-image" style="background-image: url('https://images.unsplash.com/photo-1726514731660-08f11ef1fdc1?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dq=80&w=600');"></div>
+                    <div class="dish-image" 
+                        style="background-image: url('https://images.unsplash.com/photo-1726514731660-08f11ef1fdc1');"></div>
+
                     <div class="dish-info">
                         <div class="dish-header">
                             <h3>Aguachile Mixto</h3>
                             <span class="price">$90.00</span>
                         </div>
-                        <p class="dish-desc">Combinación de camarón cocido, trozos de pulpo tierno y pescado curtido en limón. Servido con cubos de pepino, cebolla morada y tomate en nuestra salsa roja de la casa.</p>
+                        <p class="dish-desc">Combinación de camarón, pulpo y pescado curtidos en limón con vegetales y salsa roja.</p>
                     </div>
                 </div>
 
+                <!-- Tarjeta 7: Salmon al grill -->
                 <div class="dish-card">
-                    <div class="dish-image" style="background-image: url('https://images.pexels.com/photos/3763847/pexels-photo-3763847.jpeg?_gl=1*1rwwe8*_ga*NDExNDQyNzg1LjE3NjM3NTMxMDg.*_ga_8JE65Q40S6*czE3NjM3NTMxMDgkbzEkZzEkdDE3NjM3NTMzODUkajU5JGwwJGgwq=80&w=600');"></div>
+                    <div class="dish-image" 
+                        style="background-image: url('https://images.pexels.com/photos/3763847/pexels-photo-3763847.jpeg');"></div>
+
                     <div class="dish-info">
                         <div class="dish-header">
                             <h3>Salmón al Grill</h3>
                             <span class="price">$130.00</span>
                         </div>
-                        <p class="dish-desc">Filete de salmón sobre una salsa acompañado con verduras salteadas.</p>
+                        <p class="dish-desc">Filete de salmón acompañado de verduras salteadas.</p>
                     </div>
                 </div>
 
+                <!-- Tarjeta 8: Tacos Dorados -->
                 <div class="dish-card">
-                    <div class="dish-image" style="background-image: url('https://images.pexels.com/photos/19831906/pexels-photo-19831906.jpeg?_gl=1*10jw5dn*_ga*NDExNDQyNzg1LjE3NjM3NTMxMDg.*_ga_8JE65Q40S6*czE3NjM3NTMxMDgkbzEkZzEkdDE3NjM3NTQxMjIkajE4JGwwJGgwq=80&w=600');"></div>
+                    <div class="dish-image" 
+                        style="background-image: url('https://images.pexels.com/photos/19831906/pexels-photo-19831906.jpeg');"></div>
+
                     <div class="dish-info">
                         <div class="dish-header">
                             <h3>Tacos Dorados</h3>
                             <span class="price">$85.00</span>
                         </div>
-                        <p class="dish-desc">Cuatro tacos de pollo o res con crema, verduras, queso y salsa.</p>
+                        <p class="dish-desc">Cuatro tacos rellenos de pollo o res, acompañados con crema, verduras y salsa.</p>
                     </div>
                 </div>
 
+                <!-- Tarjeta 9: Fajitas de Pollo -->
                 <div class="dish-card">
-                    <div class="dish-image" style="background-image: url('https://images.pexels.com/photos/32375365/pexels-photo-32375365.jpeg?_gl=1*p2ekpf*_ga*NDExNDQyNzg1LjE3NjM3NTMxMDg.*_ga_8JE65Q40S6*czE3NjM3NTMxMDgkbzEkZzEkdDE3NjM3NTMyMTkkajMxJGwwJGgwq=80&w=600');"></div>
+                    <div class="dish-image" 
+                        style="background-image: url('https://images.pexels.com/photos/32375365/pexels-photo-32375365.jpeg');"></div>
+
                     <div class="dish-info">
                         <div class="dish-header">
                             <h3>Fajitas de Pollo</h3>
                             <span class="price">$105.00</span>
                         </div>
-                        <p class="dish-desc">Tiras de res y pollo salteadas con pimientos y cebolla, servidas con tortillas de harina, frijoles.</p>
+                        <p class="dish-desc">Tiras de carne y pollo con pimientos y cebolla, acompañadas de tortillas y frijoles.</p>
                     </div>
                 </div>
 
@@ -140,12 +192,14 @@
         </div>
     </section>
 
+    <!-- Pie de página -->
     <footer>
         <div class="container">
-            <p>&copy; 2025 Restaurante Nerak</p>
+            <p>&copy; 2025 Restaurante Nerak</p> 
             <p class="credits">Programacion Web 1</p>
             <p class="credits">Ernesto Zamora Barrera</p>
         </div>
     </footer>
+
 </body>
 </html>

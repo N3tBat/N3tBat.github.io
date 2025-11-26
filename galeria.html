@@ -2,16 +2,25 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Permite que la página sea adaptable a dispositivos móviles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería - Restaurante Nerak</title>
+
+    <!-- Fuente externa desde Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     
+    <!-- Encabezado con el menú de navegación -->
     <header>
         <div class="container navbar">
+
+            <!-- Logo o enlace principal -->
             <a href="index.html" class="logo">Restaurante Nerak</a>
+
+            <!-- Menú de navegación -->
             <nav>
                 <ul class="nav-links">
                     <li><a href="index.html">Inicio</a></li>
@@ -23,17 +32,25 @@
         </div>
     </header>
 
-    <section class="hero-internal" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1920');">
+    <!-- Sección principal con imagen de fondo y texto superpuesto -->
+    <section class="hero-internal" 
+        style="background-image: 
+               linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+               url('https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1920');">
+        
         <div class="hero-content">
+            <!-- Título de la sección -->
             <h1>Nuestra Galería</h1>
             <p>Un vistazo al corazón de nuestra cocina y nuestros espacios.</p>
         </div>
     </section>
 
+    <!-- Sección donde se muestra el grid de imágenes -->
     <section class="seccion-menu">
         <div class="container">
             <div class="gallery-grid">
-                
+
+                <!-- Imagen 1 -->
                 <div class="gallery-item">
                     <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800" alt="Interior del restaurante">
                     <div class="gallery-overlay">
@@ -41,6 +58,7 @@
                     </div>
                 </div>
 
+                <!-- Imagen 2 -->
                 <div class="gallery-item">
                     <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=800" alt="Chef cocinando">
                     <div class="gallery-overlay">
@@ -48,6 +66,7 @@
                     </div>
                 </div>
 
+                <!-- Imagen 3 -->
                 <div class="gallery-item">
                     <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?q=80&w=800" alt="Hotcakes detalle">
                     <div class="gallery-overlay">
@@ -55,6 +74,7 @@
                     </div>
                 </div>
 
+                <!-- Imagen 4 -->
                 <div class="gallery-item">
                     <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?q=80&w=800" alt="Preparando bebidas">
                     <div class="gallery-overlay">
@@ -62,6 +82,7 @@
                     </div>
                 </div>
 
+                <!-- Imagen 5 -->
                 <div class="gallery-item">
                     <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800" alt="Cena romántica">
                     <div class="gallery-overlay">
@@ -69,6 +90,7 @@
                     </div>
                 </div>
 
+                <!-- Imagen 6 -->
                 <div class="gallery-item">
                     <img src="https://images.pexels.com/photos/34802628/pexels-photo-34802628.jpeg?_gl=1*1n06o4l*_ga*NDExNDQyNzg1LjE3NjM3NTMxMDg.*_ga_8JE65Q40S6*czE3NjM3NjA4ODMkbzIkZzEkdDE3NjM3NjI1NzMkajUyJGwwJGgwq=80&w=800" alt="Postre chocolate">
                     <div class="gallery-overlay">
@@ -80,6 +102,7 @@
         </div>
     </section>
 
+    <!-- Pie de página -->
     <footer>
         <div class="container">
             <p>&copy; 2025 Restaurante Nerak</p>
